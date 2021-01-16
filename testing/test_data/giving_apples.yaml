@@ -1,0 +1,15 @@
+recipe_name: Giving an Apple to a Friend
+ingredients:
+    - apple:
+        amounts:
+            - amount: 1
+              unit: each
+        notes:
+            - Use whole apples
+            - Pears may be substituted, but produce a different flavor and mouthfeel
+steps:
+    - step: Give an apple to a friend.
+      notes:
+        - You can also give an apple to an enemy.
+notes:
+    - This is a friendly recipe; giving, rather than throwing, is recommended.

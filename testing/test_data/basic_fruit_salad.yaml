@@ -1,0 +1,28 @@
+recipe_name: Basic Fruit Salad
+yields:
+    servings: 6
+ingredients:
+    - apple:
+        amounts:
+            amount: 1
+            unit: each
+    - banana:
+        amounts:
+            amount: 1
+        notes:
+          - asdf
+    - orange:
+        amounts:
+            amount: 1
+        notes:
+          - organic
+    - grapes:
+        amounts:
+            amount: 1
+            unit: cup
+steps:
+    - Cut the apple into cubes.
+    - Cut the banana into slices.
+    - Peel the orange, and divide into segments.
+    - Combine all ingredients in a bowl.
+    - Mix to combine.
