@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{recipe_name}}</title>
+</head>
+
+<body>
+<h1>{{recipe_name}}</h1>
+
+<h3>Yield: {{yields["servings"]}} servings</h3>
+
+<h3>Ingredients</h3>
+<ul>
+    {% for ingredient, spec in ingredients.items() %}
+    <li>{{ingredient}}: {{spec['amounts']['amount']}} {{spec['amounts']['unit']}}</li>
+    {% if "notes" in spec %}
+    <ul>
+        {% for note in spec["notes"] %}
+        <li>{{note}}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+<h3>Steps</h3>
+<ul>
+    {% for step in steps %}
+    <li>{{step}}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
