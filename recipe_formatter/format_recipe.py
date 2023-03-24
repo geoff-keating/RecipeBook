@@ -36,7 +36,8 @@ def scale_by_factor(recipe: Dict, factor: Union[int, float]) -> Dict:
     """Scale a recipe by a certain multiple"""
     recipe["yields"]["servings"] *= factor
     for ingredient in recipe["ingredients"]:
-        recipe[ingredient]["amounts"]["amount"] *= factor
+        scaled = round(recipe["ingredients"][ingredient]["amounts"]["amount"] * factor, 1)
+        recipe["ingredients"][ingredient]["amounts"]["amount"] = scaled
     return recipe
 
 

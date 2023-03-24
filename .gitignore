@@ -5,6 +5,6 @@ __pycache__
 
 .idea/*
 
-renders/*
+renders/
 
 !renders/.gitkeep
